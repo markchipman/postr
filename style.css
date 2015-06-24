@@ -1,6 +1,7 @@
 html {width:100%;margin:0;padding:0;box-sizing:border-box;font:13pt Arial,sans-serif}
 body {padding:0;margin:0 auto;min-width:300px;width:75%}
+div {text-align:center}
 h1, h2{text-align:center;margin:0.5em auto}
-#psto {width:100%;display:block}
+#psto {width:100%;display:block; outline:none; resize:none}
 #shr {display:block;width:50%;margin:1em auto}
 #reslink {display:none;margin: 1em auto}

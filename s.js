@@ -13,7 +13,7 @@ addEventListener('DOMContentLoaded',function(){
 		var txt = psto.value
 		if(txt) share(txt, function(link) {
 			outLink.href = link
-			outLink.style.display = 'block'
+			outLink.style.display = 'inline-block'
 		})
 	}
 	psto.oninput = function() {
