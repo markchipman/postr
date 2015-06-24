@@ -2,20 +2,15 @@
 <html lang=en>
 <head>
 <meta charset=utf-8>
-<title>Postr under construction</title>
+<title>Postr is under construction</title>
+<link rel=stylesheet href=style.css>
 </head>
 <body>
-
-<script>
-shr = function(text, cb){
-	var	targetUrl = 'http://postr.cf/l.htmlx#data:text/plain;charset=utf-8;base64,' + btoa(unescape(encodeURIComponent(text))),
-		requestUrl = 'http://crossorigin.me/http://tinyurl.com/api-create.php?url=',
-		req = new XMLHttpRequest
-	req.open('GET', requestUrl+encodeURIComponent(targetUrl), true)
-	req.responseType = 'text'
-	req.onload = function(){cb(req.responseText)}
-	req.send()
-}
-</script>
+	<h1>Postr</h1>
+	<h2>Simplest anonymous posting</h2>
+	<textarea rows=7 id=psto placeholder="Enter the post to share (up to 6020 bytes)"></textarea>
+	<button id=shr>Share!</button>
+	<a id=reslink href="#" target=_blank>Link to shared post</a>
+	<script src=s.js></script>
 </body>
 </html>
